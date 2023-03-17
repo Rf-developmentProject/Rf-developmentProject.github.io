@@ -1,0 +1,264 @@
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+body{
+zoom:55%;
+display: block;
+position: relative;
+}
+ul {
+  display:flex;  
+  list-style:none;
+  position:fixed;
+  bottom: 0;
+  width: 200%;
+  height: 100px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+  padding: 0%;
+  margin: 0%;
+  
+}
+.wrapper1 .icon {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 400px;
+    min-width: 150px;
+   cursor: pointer;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #444444;
+    text-decoration: none;
+    background: #ffffff;
+    margin-left: 0%;
+    padding: 5px 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 10;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper1 .tooltip {
+  position: relative;
+  top: 0;
+  
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper1 .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper1 .icon:hover .tooltip {
+  
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper1 .icon:hover span,
+.wrapper1 .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper1 .icon:hover span,
+.wrapper1 .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper1 .home:hover,
+.wrapper1 .home:hover .tooltip,
+.wrapper1 .home:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper1 .bell:hover,
+.wrapper1 .bell:hover .tooltip,
+.wrapper1 .bell:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper1 .save:hover,
+.wrapper1 .save:hover .tooltip,
+.wrapper1 .save:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+
+
+.row {
+    display:flex;
+    white-space: nowrap;
+    padding-top: 50px;
+   
+  
+  }
+  
+ h3{
+    font-size: 45px;
+   
+    margin-top: 90px;
+    text-align:left;
+    font-weight: normal;
+    font-size: 50px;
+    padding-left: 200px;
+    background-color: rgba(245,245,245,255);
+    width: 100%;
+} 
+.nav{
+  padding-top: 20px;
+}
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 10%;
+    padding: 0 5px;
+    margin: 1px;
+    height: 85rem;
+    line-height: 10px;
+    display: block;
+  }
+.fbtn{
+  background-color: white; /* Green */
+  border: none;
+  color: rgb(44, 44, 44);
+  padding: 12px 8px;
+  width: 100px;
+  text-align: center;
+ 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 40px 50px;
+  cursor: pointer;
+
+}
+.fbtn:hover{
+  background-color: rgba(245,245,245,255);
+}
+
+.filterDiv {
+    float: left;
+    background-color: white;
+    color:rgb(107, 106, 106);
+    width: 100px;
+    font-size: 19px;
+    text-align: left;
+    margin: 10px;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+ ol{
+  position:absolute;
+  display: inline-block;
+  font-style: normal;
+  font-size: 20px;
+  list-style-type: none;
+ }
+ .filterDiv{
+  display: inline-block;
+  font-size: 30px;
+  line-height: 70px;
+ 
+}
+.clrbtn{
+    position: absolute;
+    left: 550px;
+    top: 450px;
+    width: 100px;
+    color: red;
+    background-color: #fff;
+    font-size: 20px;
+    border: 0;
+     }
+.close{
+  padding: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  border:1px solid rgba(211, 211, 211, 0.921);
+  position: fixed;
+  bottom:100px;
+ 
+  left:10px;
+  width:280px;
+  height:70px;
+  font-size: 20px;
+  
+}
+.apply{
+  padding: 10px;
+  margin-left: 10px;
+  background-color:#E4405F;
+  border-radius: 5px;
+  color: black;
+  border:1px solid rgba(211, 211, 211, 0.921);
+  position: fixed;
+  bottom:100px;
+ 
+  left:370px;
+  width:280px;
+  height:70px;
+  font-size: 20px
+}
+/* New Code */
+input[type=checkbox] {
+  margin-right: 10px;
+  margin-left: 1px;
+  text-align: left;
+  width: 15px;
+  height: 15px;
+  display:inline-block ;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  
+}
+
+
+input[type=checkbox]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+input[type=checkbox]::before {
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #e41111; /* set the check mark color here */
+  background-color: #007bff;
+   border-radius: 3px;
+}
+
