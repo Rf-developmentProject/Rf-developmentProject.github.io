@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8dd7d264aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <!-- custom style -->
+   
+    <title>Document</title>
+    <style>
+        body {
+            height: auto;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+    <body class="d-flex flex-column">
+
+        <header>
+           <link rel="stylesheet" type="text/css" href="menu1.css">
+  
+    <!--menu-->
+    
+   
+                  <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                           <img src="./img/home_page_icons/logo.png" alt="" style=" height: 100px; margin-left: 50px; " >
+                             
+                           <img src="./img/home_page_icons/Menu Image.png" alt="" style="width:60rem;  height:350px;" >
+                              <button type="button" id="shopnow"><b>Shop now</b></button>
+   
+                        <ol>
+                        <li><a href="front.html"><b>Add Photo</b></a></li>
+                        <li><a href="myalbum.html"><b>My Album</b></a></li>
+                        <li><a href="#"><b>Renewals</b></a></li>
+                        <li><a href="#"><b>Share</b></a></li>
+                        <li><a href="#"><b>Account</b> </a></li></ul>
+                        <div class="line"></div>
+                             <button type="button"  id="signup" onclick="document.location='signup.html'">Signup</button>
+                             <button type="button" id="login"  onclick="document.location='login.html'">Login</button>
+                 </div>
+  
+      <span class="wrapper"  onclick="openNav()">
+                  <a href="#" class="nav">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                      <div class="three"></div>
+                  </a>
+            </span>
+      
+            <link rel="stylesheet" href="./style.css">
+    <!--containner-->
+        <div class="container">
+            <img src="./img/home_page_icons/logo.png" alt="" class="home-logo">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="d-flex align-items-center m-0">
+                    <img src="./img/home_page_icons/see it in action.png" style="width:20px; margin:20px;"alt="" class="mr-2">
+                    <small class="text-muted">See it in Action!</small>
+                </p>
+                <p class="d-flex flex-column align-items-center m-0">
+                    <img src="./img/home_icons/service-icon.png" alt="" style="padding-right: 60px;height:100px;">
+                    <small style="padding-right: 60px; font-size: large;">24/7 service</small>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="showcase">
+            <div class="container">
+                <h1 class="font-weight-bold text-capitalize mb-2">The largest 🔥<br> virtual fashion<br> company
+                    <button class="btn badge-pill btn-danger | py-2 px-4" style="font-size: medium;">
+                        World-Class <br> Experience
+                    </button>
+                </h1>
+                <p class="w-85" style="font-size:30px;margin:30px;font-size: 20px;">
+                    Our growth. signature look and innovation has <br>earned us a place in so many people's
+                    hearts.
+                </p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="./img/home_page_icons/Our Juorney icon.png" style="height:40px;padding-left:15px;margin:10px;" alt="" >
+                    Our Journey
+                </div>
+                <img src="./img/home_page_icons/peoples.png" alt="" class="peoples-img | mx-auto">
+                <img src="./img/home_icons/tecnhnologies.png" alt="" class="technologies-img">
+            </div>
+        </div>
+        <div class="containerbutton">
+      <img src="./img/home_page_icons/Home Banner1.jpg" alt="" style="width: 90%;height:50%;padding-left: 90px;padding-bottom: 10px;" >
+          
+          
+          
+          
+
+
+
+    </main>
+    <script src="index.js">
+</script>  
+</body>
+
+</html>
